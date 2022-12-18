@@ -7,15 +7,13 @@ func dailyTemperatures(temperatures []int) []int {
 	tempArrayLength := len(temperatures)
 	tempWaitOutput := make([]int, tempArrayLength) // creating an array the same size as temperatures
 	for index := range temperatures {
-		if index+1 < tempArrayLength {
+		if index < tempArrayLength {
 			for j := index + 1; j < tempArrayLength; j++ {
 				if temperatures[j] > temperatures[index] {
 					tempWaitOutput[index] = j - index
 					break
 				}
 			}
-		} else {
-			tempWaitOutput[index] = 0
 		}
 	}
 	return tempWaitOutput
