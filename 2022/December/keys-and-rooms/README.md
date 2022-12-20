@@ -35,3 +35,8 @@ Explanation: We can not enter room number 2 since the only key that unlocks it i
 - `1 <= sum(rooms[i].length) <= 3000`
 - `0 <= rooms[i][j] < n`
 - All the values of `rooms[i]` are unique.
+
+
+
+## Solution:
+I used Depth first Search (DFS) algorithm to solve the problem.
